@@ -22,6 +22,6 @@ Open codes for paper "Level Set based Shape Prior and Deep Learning for Image Se
 
 ## Reference
 
-- ![PortraitFCN](http://xiaoyongshen.me/webpage_portrait/index.html)
-- ![Global Affine Transformation](https://ieeexplore.ieee.org/abstract/document/735806/)
-- ![Level Set](http://www.engr.uconn.edu/~cmli/)
+- [PortraitFCN](http://xiaoyongshen.me/webpage_portrait/index.html)
+- [Global Affine Transformation](https://ieeexplore.ieee.org/abstract/document/735806/)
+- [Level Set](http://www.engr.uconn.edu/~cmli/)
