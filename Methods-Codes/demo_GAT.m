@@ -1,5 +1,5 @@
 clear;clc;
-imgindex = 341;
+imgindex = 174;
 img = imread(['./images_data_crop/' sprintf('%05d',imgindex) '.jpg']);
 load(['./images_mask/' sprintf('%05d', imgindex) '_mask.mat']);
 load(['./Output_PortraitFCNplus/' sprintf('%05d',imgindex) '_output.mat']);
@@ -100,5 +100,3 @@ subplot(1,3,3);imshow(affined_mask);
 figure;imshow(img);
 figure;imshow(T_res_c_2);
 figure;imshow(affined_mask);
-% 492
-% 174

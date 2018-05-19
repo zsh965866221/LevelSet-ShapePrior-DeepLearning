@@ -5,7 +5,7 @@ imgindex = 757;
 img = imread(['./images_data_crop/' sprintf('%05d',imgindex) '.jpg']);
 load(['./images_mask/' sprintf('%05d', imgindex) '_mask.mat']); % mask
 load(['./Output_PortraitFCN/' sprintf('%05d',imgindex) '_output.mat']); % res
-load(['./Affined_shapemask/' sprintf('%05d',00073) '_affinedshape.mat']); % affined_mask
+load(['./Affined_shapemask/' sprintf('%05d',imgindex) '_affinedshape.mat']); % affined_mask
 shapemask = imread('meanmask.png');
 shapemask = double(shapemask)./255;
 img = rgb2gray(img);
