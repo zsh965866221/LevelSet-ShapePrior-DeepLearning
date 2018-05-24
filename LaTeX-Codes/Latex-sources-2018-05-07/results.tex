@@ -12,8 +12,6 @@ Some images and ground truth of portrait data set are shown in Fig. \ref{fig: So
     \caption{Some noise in the Portrait data set.}\label{fig: Some noise in the Portrait data set}
 \end{figure}
 
-The traditional Level Set method is suitable for image of simple scenes, and the proposed method in this paper combines it with FCNs and shape prior to make it possible to be applied to image segmentation of complex scenes.
-
 \subsection{Evaluation Measure}
 There is only one kind of segmentation target in this image segmentation task, only the regions of target need to be marked. So we only need to calculate the difference between the output regions of models and the regions of ground truth. The standard metric Interaction-over-Union (IoU) is selected to represent the segmentation error.
 \begin{equation*}
