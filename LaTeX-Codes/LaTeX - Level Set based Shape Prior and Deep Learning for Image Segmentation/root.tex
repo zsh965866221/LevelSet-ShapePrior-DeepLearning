@@ -1,0 +1,172 @@
+\documentclass[journal]{IEEEtran}
+% onecolumn
+
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{breqn}
+\usepackage{color}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[justification=centering]{caption}
+\usepackage[colorlinks,allcolors=blue,bookmarks=false]{hyperref}
+\usepackage{cleveref}
+\usepackage{siunitx}
+\usepackage{cite}
+% \usepackage{flushend}
+\usepackage{float}
+\let\labelindent\relax
+\usepackage{enumitem}
+\usepackage{microtype}
+\begin{document}
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+\title{Level Set based Shape Prior and Deep Learning \\for Image Segmentation}
+
+
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+\author{
+    \IEEEauthorblockN{Yongming Han, Shuheng Zhang, Zhiqing Geng$^*$}
+
+    \IEEEauthorblockA{College of Information Science \& Technology, Beijing University of Chemical Technology, \\Beijing 100029, China;
+    }
+
+    \IEEEauthorblockA{Engineering Research Center of Intelligent PSE, Ministry of Education in China, \\Beijing 100029, China
+    }
+    \thanks{$^*$Corresponding author.}
+    \thanks{E-mail address: gengzhiqiang@mail.buct.edu.cn (Zhiqiang Geng).}
+}
+
+
+% note the % following the last \IEEEmembership and also \thanks -
+% these prevent an unwanted space from occurring between the last author name
+% and the end of the author line. i.e., if you had this:
+%
+% \author{....lastname \thanks{...} \thanks{...} }
+%                     ^------------^------------^----Do not want these spaces!
+%
+% a space would be appended to the last name and could cause every name on that
+% line to be shifted left slightly. This is one of those "LaTeX things". For
+% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
+% "AB" then you have to do: "\textbf{A}\textbf{B}"
+% \thanks is no different in this regard, so shield the last } of each \thanks
+% that ends a line with a % and do not let a space in before the next \thanks.
+% Spaces after \IEEEmembership other than the last one are OK (and needed) as
+% you are supposed to have spaces between the names. For what it is worth,
+% this is a minor point as most people would not even notice if the said evil
+% space somehow managed to creep in.
+
+% The paper headers
+% \markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
+% {Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for IEEE Journals}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+%
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers.                   ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+
+% If you want to put a publisher's ID mark on the page you can do it like
+% this:
+%\IEEEpubid{0000--0000/00\$00.00~\copyright~2015 IEEE}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark.
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\begin{abstract}
+\input{abstract}
+\end{abstract}\label{Abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+Image Segmentation, Deep Learning, Level Set, Deep Prior, Global Affine Transformation.
+\end{IEEEkeywords}
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}\label{sec:Introduction}
+\input{Introduction}
+
+
+\section{The Level Set with the Deep Prior Method}\label{sec:Propsed Work}
+\input{Proposed}
+
+
+\section{Experiments and Results}\label{sec:Experiments and Results}
+\input{Results}
+
+
+\section{Discussion}\label{sec:Discussion}
+\input{Discussion}
+
+
+\section{Conclusion}\label{sec:Conclusion and Future Work}
+\input{Conclusion}
+
+
+\section*{Acknowledgment}\label{sec:Acknowledgment}
+\input{Acknowledgment}
+
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+\bibliographystyle{IEEEtran}
+\bibliography{bib_zsh}
+
+% biography section
+% \input{biography}
+% \label{Biography}
+
+% that's all folks
+\end{document}
+
+
