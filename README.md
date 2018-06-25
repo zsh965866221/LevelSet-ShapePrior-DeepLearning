@@ -9,9 +9,11 @@ Open codes for paper "Level Set based Shape Prior and Deep Learning for Image Se
 ## GAT
 ![GAT](https://github.com/zsh965866221/LevelSet-ShapePrior-DeepLearning/blob/master/figs/GAT.png?raw=true)
 
+## Results
+![Results](https://github.com/zsh965866221/LevelSet-ShapePrior-DeepLearning/blob/master/figs/6.png?raw=true)
+
 ## Experiments
 ![Experiments](https://github.com/zsh965866221/LevelSet-ShapePrior-DeepLearning/blob/master/figs/Experiment.png?raw=true)
-
 ### Experiment 1
 ![Experiment 1](https://github.com/zsh965866221/LevelSet-ShapePrior-DeepLearning/blob/master/figs/Experiment1.png?raw=true)
 
