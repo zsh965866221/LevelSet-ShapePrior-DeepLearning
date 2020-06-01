@@ -36,5 +36,3 @@ After training on the training set, FCNs can extract features of the target and 
 - [Global Affine Transformation](https://ieeexplore.ieee.org/abstract/document/735806/)
 - [Level Set](http://www.engr.uconn.edu/~cmli/)
 
-## 版权声明
-- **北京化工大学 信息学院 `韩永明, 张树恒, 耿志强`** 版权所有
